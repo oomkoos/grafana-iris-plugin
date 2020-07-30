@@ -42,47 +42,47 @@ The easiest development flow is to `docker-compose up` and `yarn watch`, so afte
 ### Setup the dashboard
 Watch a video
 
-[![Watch a video](../img/video.png)](https://www.loom.com/share/d8cc15e7307141039095ba30223c63be)
+[![Watch a video](img/video.png)](https://www.loom.com/share/d8cc15e7307141039095ba30223c63be)
 #### Add the datasource
-![Add the panel](../img/AddTheDataSourceSelect.png)
+![Add the panel](img/AddTheDataSourceSelect.png)
 
-![Add the panel](../img/AddTheDataSource.png)
+![Add the panel](img/AddTheDataSource.png)
 
 and test it...
 
-![Add the panel](../img/TestTheDataSource.png)
+![Add the panel](img/TestTheDataSource.png)
 #### Add a dashboard
-![Add the panel](../img/CreateDashboardSelect.png)
+![Add the panel](img/CreateDashboardSelect.png)
 
-![Add the panel](../img/AddPanel.png)
+![Add the panel](img/AddPanel.png)
 #### Add a panel
-![Add the panel](../img/EditPanelSelectGdef.png)
+![Add the panel](img/EditPanelSelectGdef.png)
 #### Select a `gdef` metric
 This is a drop-down with autocomplete functionality. It is currently populated from a static file `basetag-gdef-relation.constants.ts`.
 
-![Add the panel](../img/AddPanelSelectGdefAutoComplete.png)
+![Add the panel](img/AddPanelSelectGdefAutoComplete.png)
 #### Select a `basetag` metric
 This is a drop-down with autocomplete functionality, currently fed by the `gdef` selection. Changing it will trigger a request.
 
-![Add the panel](../img/AddPanelSelectBasetag.png)
+![Add the panel](img/AddPanelSelectBasetag.png)
 #### Select the `target / label` metric
 This is a drop-down with autocomplete functionality, and will be populated only after the response returns. Changing it will trigger a request.
 
-![Add the panel](../img/AddPanelSelectLabel.png)
+![Add the panel](img/AddPanelSelectLabel.png)
 
 After updating the `gdef` and `basetag` the query fires again and will re-populate the `target / label` drop-down, only changing the `gdef` drop-down will NOT trigger a request.
 
-![Add the panel](../img/AddPanelSelectNextLabel.png)
+![Add the panel](img/AddPanelSelectNextLabel.png)
 #### Add a second query
 
 The same query will be triggered here, but a different `target / label` can be selected.
 
-![Add the panel](../img/AddPanelAddSecondQuery.png)
+![Add the panel](img/AddPanelAddSecondQuery.png)
 #### Add a math function
 For now only simple operations are available ie.`* / - +` using the `targetValue` and the `scaleValue` in this order, but they can easily be expanded to use a Math Parser
 like [nerdamer](https://github.com/jiggzson/nerdamer) or [mathjs](https://mathjs.org/docs/expressions/parsing.html).
 
-![Add the panel](../img/AddPanelMathFunction.png)
+![Add the panel](img/AddPanelMathFunction.png)
 
 ## Request data sample
 
