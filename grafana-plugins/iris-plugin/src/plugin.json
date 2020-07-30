@@ -1,0 +1,37 @@
+{
+  "type": "datasource",
+  "name": "iris-plugin",
+  "id": "mavenone-iris-plugin",
+  "metrics": true,
+  "info": {
+    "description": "Prototype IRIS REST API Plugin",
+    "author": {
+      "name": "oomkoos",
+      "url": "maven.one"
+    },
+    "keywords": [
+      "IRIS REST API Prototype"
+    ],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/grafana/simple-datasource"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/simple-datasource/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaVersion": "7.1.x",
+    "plugins": []
+  }
+}

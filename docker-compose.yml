@@ -1,0 +1,11 @@
+version: "3"
+services:
+  dashboard:
+    image: grafana/grafana:7.1.1
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana:/var/lib/grafana
+      - ./grafana-plugins:/var/lib/grafana/plugins
+    environment:
+      - GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=mavenone-iris-plugin
